@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 
-class Container extends Component {
+class Login extends Component {
   render() {
-
-    const styles = require('./Container.scss');
-    console.log('styles');
-    console.log(styles);
+    const styles = require('./Login.scss');
     return (
         <div className={ styles.container } >
           <div className={styles.header_container }>
@@ -56,4 +53,4 @@ class Container extends Component {
   }
 }
 
-export default Container
+export default Login 
