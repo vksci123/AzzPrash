@@ -1,6 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+
+import { connect } from 'react-redux';
+
+import { INPUT_VALUE_CHANGED } from './LoginAction';
 
 class Login extends Component {
+  inputValueChanged(e) {
+    console.log('input value changed');
+    console.log(e.target);
+    this.props.dispatch( { type: INPUT_VALUE_CHANGED, data: e.target.value });
+  }
   render() {
     const styles = require('./Login.scss');
     return (
@@ -12,7 +21,7 @@ class Login extends Component {
           </div>
           <form className={ styles.main_form }>
             <div className={ styles.form_element }>
-              <input type="text" placeholder="Username" className={ styles.padding_left } />
+              <input type="text" placeholder="Username" className={ styles.padding_left } onChange={ this.inputValueChanged.bind(this) } />
               <div className={ styles.text_before } > 
                 <div className={ styles.text } >
                   USERNAME 
@@ -53,4 +62,12 @@ class Login extends Component {
   }
 }
 
-export default Login 
+Login.propTypes = {
+  dispatch: PropTypes.func.isRequired
+};
+
+const mapStateToProps = (state) => {
+  return { ...state.login_data };
+}
+
+export default connect( mapStateToProps )(Login);

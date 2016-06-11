@@ -1,0 +1,14 @@
+.body_container {
+  width: 100%;
+  float: left;
+  background-color: #F0F3F4;
+  .body_header {
+    margin-top: 30px;
+    font-size: 25px;
+    background-color: #F5F7F7;
+    .body_header_content {
+      color: #555555;
+      padding: 15px;
+    }
+  }
+}
