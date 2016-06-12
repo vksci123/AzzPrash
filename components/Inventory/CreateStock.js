@@ -29,7 +29,7 @@ class CreateStock extends Component {
                 <span>
                   Size 
                 </span>
-                <select id="size_dropdown" className={ styles.form_elem + ' ' + styles.width_60_input }>
+                <select id="size_dropdown" className={ styles.form_elem + ' ' + styles.width_60_input + ' ' + styles.select_multiple } multiple>
                   <option value="XS"> XS </option>
                   <option value="S"> S </option>
                   <option value="M"> M </option>

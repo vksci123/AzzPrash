@@ -23,9 +23,7 @@ class Stock extends Component {
             */}
           </div>
         </div>
-        {/*
         <CreateStock />
-        */}
         <ViewStock />
       </div>
     );
