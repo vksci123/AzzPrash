@@ -53,6 +53,7 @@
     "babel-plugin-typecheck": "^3.9.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-fontawesome": "^1.1.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
     "redux": "^3.5.2"
