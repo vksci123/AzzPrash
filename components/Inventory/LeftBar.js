@@ -30,7 +30,7 @@ class LeftNav extends Component {
                 Billing
               </span>
             </div>
-            <div className={ styles.navigation_item }>
+            <div className={ styles.navigation_item + ' ' + styles.navigation_item_active }>
               <FontAwesome name="calendar" className={ styles.fa } /> 
               <span className={ styles.nav_item }> 
                 Stocks

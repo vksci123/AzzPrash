@@ -3,10 +3,17 @@
   float: left;
   background-color: #F0F3F4;
   margin-top: 2px;
+  .table_body {
+    margin: 5px;
+    .icon_class {
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
   .body_header {
     margin-top: 30px;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 600;
     color: #575757;
     background-color: #F5F7F7;
     box-shadow: 1px 2px 3px #E4E7E8;
@@ -62,12 +69,12 @@
     color: #555555;
     .form_header {
       padding: 15px;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 15px;
     }
     .form_sub_header {
       padding: 15px;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 15px;
     }
     .form_border_bottom_stock {
@@ -107,7 +114,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         span {
-          font-weight: 500;
+          font-weight: 600;
           font-size: 13px;
           padding-right: 20px;
           width: 100px;
