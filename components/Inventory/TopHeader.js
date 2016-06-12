@@ -9,7 +9,7 @@ class TopHeader extends Component {
       <div className={ styles.top_header }>
         <div className={ styles.nav_drawer }>
           <div className={ styles.nav_inner_div }>
-            <FontAwesome name="bars" />
+            <FontAwesome name="outdent" />
           </div>
         </div>
       </div>
